@@ -37,5 +37,37 @@ contract math
         return num1 ** num2;
     }
     
+    uint8 a = 3;
+    uint8 b = 4;
+    
+     function weiyu() view public returns (uint)
+    {
+        return a & b;
+    }
+    
+     function weihuo() view public returns (uint)
+    {
+        return a | b;
+    }
+    
+     function weiyihuo() view public returns (uint)
+    {
+        return a ^ b;
+    }
+    
+    function weifan() view public returns (uint)
+    {
+        return ~a;
+    }
+    
+     function weizuoyi() view public returns (uint)
+    {
+        return a << 1;
+    }
+    
+     function weiyouyi() view public returns (uint)
+    {
+        return a >> 1;
+    }
     
 }
