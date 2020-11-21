@@ -8,5 +8,15 @@ contract Helloworld {
     return Myname;
  }
 
+function changeName(string newName) public
+{
+    Myname = newName;
+}
     
+function pureTest(string _name) pure public returns(string)
+{
+  return _name;      
+}
+
+
 }
