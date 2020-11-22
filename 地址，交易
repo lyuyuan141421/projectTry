@@ -1,0 +1,27 @@
+pragma solidity ^0.4.0;
+
+contract addressTest
+{
+    address public account = 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4; 
+                            // 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4  wai bu di zhi, 160 zi jie = uint160 de fang shi cun chu
+                            // 0xDA07165D4f7c84EEEfa7a4Ff439e039B7925d3dF  he yue di zhi, qu kaui lian di zhi
+                            
+    function changeItToUint160() view returns(uint160)
+    {
+        return uint160(account);   // 520786028573371803640530888255888666801131675076
+    }
+     
+    address account1 = 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4;
+    address account2 = 0xDA07165D4f7c84EEEfa7a4Ff439e039B7925d3dF;
+    
+    function check1() view returns(bool)
+    {
+        return account1 > account1;
+    }
+    
+    function check2() view returns(bool)
+    {
+        return account1 == account1;
+    }
+    
+}
